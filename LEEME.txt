@@ -1,0 +1,11 @@
+KINGSLAND SERVICES — SITIO ESTÁTICO PARA NETLIFY
+
+PUBLICACIÓN MANUAL:
+1. Accede a https://app.netlify.com/drop
+2. Arrastra esta carpeta descomprimida (Kingsland_Services_Netlify_Listo), NO un HTML suelto.
+3. Netlify publicará index.html; las fotografías están en assets/.
+
+PUBLICACIÓN DESDE GIT:
+El directorio de publicación es la raíz del proyecto (.). No requiere comando de build.
+
+IMPORTANTE: Este es un mockup con la etiqueta noindex,nofollow. Para lanzar el sitio definitivo, revisa la aprobación de la marca, fotografías y textos; luego elimina la etiqueta meta robots que lo oculta de buscadores.
