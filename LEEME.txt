@@ -1,11 +1,20 @@
-KINGSLAND SERVICES — SITIO ESTÁTICO PARA NETLIFY
+KINGSLAND SERVICES — SITIO ESTÁTICO
 
-PUBLICACIÓN MANUAL:
-1. Accede a https://app.netlify.com/drop
-2. Arrastra esta carpeta descomprimida (Kingsland_Services_Netlify_Listo), NO un HTML suelto.
-3. Netlify publicará index.html; las fotografías están en assets/.
+Dominio público: https://kingslandservicestx.com/
+El sitio público se sirve desde Hostinger. La configuración de Netlify en este
+repositorio se conserva para posibles despliegues futuros en esa plataforma.
 
-PUBLICACIÓN DESDE GIT:
-El directorio de publicación es la raíz del proyecto (.). No requiere comando de build.
+La portada en español es index.html. Después de editarla, ejecuta:
+  node scripts/build-en.js
+Esto actualiza la versión inglesa en en/index.html.
 
-IMPORTANTE: Este es un mockup con la etiqueta noindex,nofollow. Para lanzar el sitio definitivo, revisa la aprobación de la marca, fotografías y textos; luego elimina la etiqueta meta robots que lo oculta de buscadores.
+Publica también robots.txt, sitemap.xml, .htaccess, social-preview.jpg,
+los iconos y la carpeta assets sin borrar otros archivos del servidor.
+Verifica que / y /en/ respondan con 200,
+que www redirija a la versión sin www y que el sitemap use el dominio público.
+Si ya existe un .htaccess en Hostinger, agrega la regla de este repositorio
+al archivo existente en vez de reemplazarlo.
+
+La portada se sincronizó con la versión pública el 22 de octubre de 2026.
+Antes de reemplazar el sitio completo, compara los demás archivos del servidor
+para conservar cualquier archivo que no esté en este repositorio.
