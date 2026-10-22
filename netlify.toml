@@ -1,2 +1,8 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "https://www.kingslandservicestx.com/*"
+  to = "https://kingslandservicestx.com/:splat"
+  status = 301
+  force = true
